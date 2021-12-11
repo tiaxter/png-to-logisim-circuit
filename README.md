@@ -1,6 +1,6 @@
 # PNG to Logisim Circuit
 
-# Requirements
+## Requirements
 - OpenCV
 
 ## How to use it
