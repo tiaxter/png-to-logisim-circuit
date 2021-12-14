@@ -16,7 +16,7 @@ def get_hex_values(image, width, height) -> list[str]:
         row_pixel: int = 0
         for x in range(width):
             b, g, r = image[x][y]
-            if r == 0 and g == 0 and b == 0:
+            if r != 255 and g != 255 and b != 255:
                 row_pixel += int(pow(2, 31 - x))
         image_row.append(hex(row_pixel))
     return image_row
